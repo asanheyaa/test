@@ -168,14 +168,12 @@ body {
   font-size: 26px;
   font-weight: 600;
   line-height: 150%; /* 39/26 */
-  letter-spacing: 1%;
 }
 .aside-logo__text span {
   color: rgb(131, 131, 131);
   font-size: 10px;
   font-weight: 500;
   line-height: 150%; /* 15/10 */
-  letter-spacing: -1%;
 }
 
 .aside-nav {
