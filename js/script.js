@@ -5,18 +5,20 @@ const aside = document.querySelector('.aside'),
 	tableItems = document.querySelectorAll('.page-table__tbody tr'),
 	pageFooter = document.querySelector('.page-body__footer ')
 document.addEventListener('DOMContentLoaded', (e) => {
-	aside.classList.add('_show');
-
+	
+setInterval(() => {
+		aside.classList.add('_show');
+	}, 200);
 	setInterval(() => {
 		pageTitle.classList.add('_show')
-	}, 400);
+	}, 500);
 	setInterval(() => {
 		pageBody.classList.add('_show')
-	}, 700);
+	}, 800);
 	tableItems.forEach((item, index) => {
 		setInterval(() => {
 			item.classList.add('_show')
-		}, (700 + (index * 300)));
+		}, (800 + (index * 300)));
 	})
 	setInterval(() => {
 		pageFooter.classList.add('_show')
