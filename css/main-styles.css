@@ -382,6 +382,7 @@ body {
   padding: 13px;
   border-bottom: 1px solid rgb(238, 238, 238);
   text-wrap: nowrap;
+  color: rgb(181, 183, 192);
 }
 .page-table__tbody tr {
   opacity: 0;
