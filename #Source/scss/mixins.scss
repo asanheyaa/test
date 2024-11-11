@@ -1,0 +1,41 @@
+@mixin adaptiveValue($property, $pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$addMobSize: $addSize + ($addSize * 0.7);
+
+	#{$property}: #{$pcSize + px};
+
+	@media (max-width:#{$containerWidth + px}) {
+		#{$property}: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$containerWidth - 320}));
+	}
+}
+
+
+
+@mixin multiLineEllipsis($lineCount) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $lineCount;
+	-webkit-box-orient: vertical;
+}
+
+
+// @mixin adaptiveValue($property, $pcSize, $mobSize, $type) {
+// 	$addSize: $pcSize - $mobSize;
+// 	@if $type == 1 {
+// 		// Тільки якщо меньше контейнера
+// 		#{$property}: #{$pcSize + px};
+// 		@media (max-width:#{$containerWidth + px}) {
+// 			#{$property}: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$containerWidth - 320}));
+// 		}
+// 	} @else if $type == 2 {
+// 		// Тільки якщо більше контейнера
+// 		#{$property}: #{$pcSize + px};
+
+// 		@media (min-width:#{$containerWidth + px}) {
+// 			#{$property}: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+// 		}
+// 	} @else{
+// 		#{$property}: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+// 	}
+// }

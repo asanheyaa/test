@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/font-loader.js"></script>
+    <link rel="stylesheet" href="css/main-styles.min.css">
+    <title>dashboard</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__container">
+
+            <main class="page">
+                <h2 class="page__title mobileAnim">
+                    Hello Evano <img class="page__emoji" src="https://emojicdn.elk.sh/👋🏼" alt="#">,
+                </h2>
+                <div class="page__body page_body mobileAnim">
+                    <section class="page_body__header">
+                        <div class="page_body__info">
+                            <h2 class="page_body__title">All Customers</h2>
+                            <div class="page_body__label">Active Members</div>
+                        </div>
+                        <form action="#" class="page_body__search">
+                            <label for="search" class="page_body__icon">
+                                <svg class="page_body__vector">
+                                    <use xlink:href='img/main/sprite.svg#search_icon'></use>
+                                </svg>
+                            </label>
+                            <input id="search" type="text" placeholder="Search" class="page_body__input">
+                        </form>
+                    </section>
+                    <div class="page_body__table page_table">
+                        <table class="page_table__table">
+                            <thead class="page_table__thead">
+                                <tr class="page_table__tr mobileAnim">
+                                    <th class="page_table__th page_table__th_name">Customer Name</th>
+                                    <th class="page_table__th page_table__th_company">Company</th>
+                                    <th class="page_table__th page_table__th_number">Phone Number</th>
+                                    <th class="page_table__th page_table__th_email">Email</th>
+                                    <th class="page_table__th page_table__th_country">Country</th>
+                                    <th class="page_table__th page_table__th_status">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="page_table__tbody">
+                                <tr class="page_table__tr mobileAnim">
+                                    <td class="page_table__td">Jane Cooper</td>
+                                    <td class="page_table__td">Microsoft</td>
+                                    <td class="page_table__td">(225) 555-0118</td>
+                                    <td  class="page_table__td">jane@microsoft.com</td>
+                                    <td class="page_table__td">United States</td>
+                                    <td class="page_table__td "><span class="page_table__active">Active</span></td>
+                                </tr>
+                                <tr class="page_table__tr mobileAnim">
+                                    <td class="page_table__td">Floyd Miles</td>
+                                    <td class="page_table__td">Yahoo</td>
+                                    <td class="page_table__td">(205) 555-0100</td>
+                                    <td class="page_table__td">floyd@yahoo.com</td>
+                                    <td class="page_table__td">Kiribati</td>
+                                    <td class="page_table__td "><span class="page_table__inactive">Inactive</span></td>
+                                </tr>
+                                <tr class="page_table__tr mobileAnim">
+                                    <td class="page_table__td">Ronald Richards</td>
+                                    <td class="page_table__td">Adobe</td>
+                                    <td class="page_table__td">(302) 555-0107</td>
+                                    <td class="page_table__td">ronald@adobe.com</td>
+                                    <td class="page_table__td">Israel</td>
+                                    <td class="page_table__td"><span class="page_table__inactive">Inactive</span></td>
+                                </tr>
+                                <tr class="page_table__tr mobileAnim">
+                                    <td class="page_table__td">Marvin McKinney</td>
+                                    <td class="page_table__td">Tesla</td>
+                                    <td class="page_table__td">(252) 555-0126</td>
+                                    <td class="page_table__td">marvin@tesla.com</td>
+                                    <td class="page_table__td">Iran</td>
+                                    <td class="page_table__td "><span class="page_table__active">Active</span></td>
+                                </tr>
+                                <tr class="page_table__tr mobileAnim">
+                                    <td class="page_table__td">Jerome Bell</td>
+                                    <td class="page_table__td">Google</td>
+                                    <td class="page_table__td">(629) 555-0129</td>
+                                    <td class="page_table__td">jerome@google.com</td>
+                                    <td class="page_table__td">Réunion</td>
+                                    <td class="page_table__td"><span class="page_table__active">Active</span></td>
+                                </tr>
+                                <tr class="page_table__tr mobileAnim">
+                                    <td class="page_table__td">Kathryn Murphy</td>
+                                    <td class="page_table__td">Microsoft</td>
+                                    <td class="page_table__td">(406) 555-0120</td>
+                                    <td class="page_table__td">kathryn@microsoft.com</td>
+                                    <td class="page_table__td">Curaçao</td>
+                                    <td class="page_table__td"><span class="page_table__active">Active</span></td>
+                                </tr>
+                                <tr class="page_table__tr mobileAnim">
+                                    <td class="page_table__td">Jacob Jones</td>
+                                    <td class="page_table__td">Yahoo</td>
+                                    <td class="page_table__td">(208) 555-0112</td>
+                                    <td class="page_table__td">jacob@yahoo.com</td>
+                                    <td class="page_table__td">Brazil</td>
+                                    <td class="page_table__td"><span class="page_table__active">Active</span></td>
+                                </tr>
+                                <tr class="page_table__tr mobileAnim">
+                                    <td class="page_table__td">Kristin Watson</td>
+                                    <td class="page_table__td">Facebook</td>
+                                    <td class="page_table__td">(704) 555-0127</td>
+                                    <td class="page_table__td">kristin@facebook.com</td>
+                                    <td class="page_table__td">Åland Islands</td>
+                                    <td class="page_table__td"><span class="page_table__inactive">Inactive</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="page_body__table page_table_mobile">
+                        <table class="page_table_mobile__table">
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <th class="page_table_mobile__th" colspan="2">Jane Cooper</th>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Company:</td>
+                                <td class="page_table_mobile__td">Microsoft</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Phone Number:</td>
+                                <td class="page_table_mobile__td">(225) 555-0118</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Email:</td>
+                                <td class="page_table_mobile__td">jane@microsoft.com</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Country:</td>
+                                <td class="page_table_mobile__td">United States</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Status:</td>
+                                <td class="page_table_mobile__td"><span class="page_table_mobile__active">Active</span></td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <th class="page_table_mobile__th" colspan="2">Floyd Miles</th>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Company:</td>
+                                <td class="page_table_mobile__td">Yahoo</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Phone Number:</td>
+                                <td class="page_table_mobile__td">(205) 555-0100</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Email:</td>
+                                <td class="page_table_mobile__td">floyd@yahoo.com</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Country:</td>
+                                <td class="page_table_mobile__td">Kiribati</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Status:</td>
+                                <td class="page_table_mobile__td"><span class="page_table_mobile__inactive">Inactive</span></td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <th class="page_table_mobile__th" colspan="2">Ronald Richards</th>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Company:</td>
+                                <td class="page_table_mobile__td">Adobe</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Phone Number:</td>
+                                <td class="page_table_mobile__td">(302) 555-0107</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Email:</td>
+                                <td class="page_table_mobile__td">ronald@adobe.com</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Country:</td>
+                                <td class="page_table_mobile__td">Israel</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Status:</td>
+                                <td class="page_table_mobile__td"><span class="page_table_mobile__inactive">Inactive</span></td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <th class="page_table_mobile__th" colspan="2">Marvin McKinney</th>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Company:</td>
+                                <td class="page_table_mobile__td">Tesla</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Phone Number:</td>
+                                <td class="page_table_mobile__td">(252) 555-0126</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Email:</td>
+                                <td class="page_table_mobile__td">marvin@tesla.com</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Country:</td>
+                                <td class="page_table_mobile__td">Iran</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Status:</td>
+                                <td class="page_table_mobile__td"><span class="page_table_mobile__active">Active</span></td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <th class="page_table_mobile__th" colspan="2">Jerome Bell</th>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Company:</td>
+                                <td class="page_table_mobile__td">Google</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Phone Number:</td>
+                                <td class="page_table_mobile__td">(629) 555-0129</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Email:</td>
+                                <td class="page_table_mobile__td">jerome@google.com</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Country:</td>
+                                <td class="page_table_mobile__td">Réunion</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Status:</td>
+                                <td class="page_table_mobile__td"><span class="page_table_mobile__active">Active</span></td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <th class="page_table_mobile__th" colspan="2">Kathryn Murphy</th>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Company:</td>
+                                <td class="page_table_mobile__td">Microsoft</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Phone Number:</td>
+                                <td class="page_table_mobile__td">(406) 555-0120</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Email:</td>
+                                <td class="page_table_mobile__td">kathryn@microsoft.com</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Country:</td>
+                                <td class="page_table_mobile__td">Curaçao</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Status:</td>
+                                <td class="page_table_mobile__td"><span class="page_table_mobile__active">Active</span></td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <th class="page_table_mobile__th" colspan="2">Jacob Jones</th>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Company:</td>
+                                <td class="page_table_mobile__td">Yahoo</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Phone Number:</td>
+                                <td class="page_table_mobile__td">(208) 555-0112</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Email:</td>
+                                <td class="page_table_mobile__td">jacob@yahoo.com</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Country:</td>
+                                <td class="page_table_mobile__td">Brazil</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Status:</td>
+                                <td class="page_table_mobile__td"><span class="page_table_mobile__active">Active</span></td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <th class="page_table_mobile__th" colspan="2">Kristin Watson</th>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Company:</td>
+                                <td class="page_table_mobile__td">Facebook</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Phone Number:</td>
+                                <td class="page_table_mobile__td">(704) 555-0127</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Email:</td>
+                                <td class="page_table_mobile__td">kristin@facebook.com</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Country:</td>
+                                <td class="page_table_mobile__td">Åland Islands</td>
+                            </tr>
+                            <tr class="page_table_mobile__tr mobileAnim">
+                                <td class="page_table_mobile__td">Status:</td>
+                                <td class="page_table_mobile__td"><span class=" page_table_mobile__inactive">Inactive</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <section class="page_body__footer page_footer mobileAnim">
+
+                        <h4 class="page_footer__label">Showing data 1 to 8 of 256K entries</h4>
+                        <div class="page_footer__pages">
+                            <a href="" class="page_footer__page">
+                                &lt;
+                            </a>
+                            <a href="" class="page_footer__page _active">
+                                1
+                            </a>
+                            <a href="" class="page_footer__page">
+                                2
+                            </a>
+                            <a href="" class="page_footer__page">
+                                3
+                            </a>
+                            <a href="" class="page_footer__page">
+                                4
+                            </a>
+                            <div class="page_footer__dots">
+                                ...
+                            </div>
+                            <a href="" class="page_footer__page">
+                                40
+                            </a>
+                            <a href="" class="page_footer__page">
+                                &gt;
+                            </a>
+
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <aside class="aside">
+                <div class="aside__logo aside_logo">
+                    <div class="aside_logo__icon">
+                        <svg class="aside_logo__vector">
+                            <use xlink:href='img/main/sprite.svg#logo'></use>
+                        </svg>
+                    </div>
+                    <h1 class="aside_logo__text">Dashboard <span>v.01</span></h1>
+                </div>
+                <nav class="aside__nav aside_nav">
+                    <ul class="aside_nav__list">
+                        <li class="aside_nav__item">
+                            <a href="#" class="aside_nav__link">
+                                <div class="aside_nav__icon aside_nav__icon_stroke">
+                                    <svg class="aside_nav__vector">
+                                        <use xlink:href='img/main/sprite.svg#dashboard_icon'></use>
+                                    </svg>
+
+                                </div>
+                                <div class="aside_nav__text">Dashboard</div>
+                            </a>
+                        </li>
+                        <li class="aside_nav__item">
+                            <a href="#" class="aside_nav__link">
+                                <div class="aside_nav__icon aside_nav__icon_fill">
+                                    <svg class="aside_nav__vector">
+                                        <use xlink:href='img/main/sprite.svg#product_icon'></use>
+                                    </svg>
+
+
+                                </div>
+                                <div class="aside_nav__text">Product</div>
+                                <div class="aside_nav__arrow">
+                                    <svg class="aside_nav__decor">
+                                        <use xlink:href='img/main/sprite.svg#arrow'></use>
+                                    </svg>
+
+                                </div>
+                            </a>
+                        </li>
+                        <li class="aside_nav__item">
+                            <a href="#" class="aside_nav__link _active">
+                                <div class="aside_nav__icon aside_nav__icon_stroke">
+                                    <svg class="aside_nav__vector">
+                                        <use xlink:href='img/main/sprite.svg#customers_icon'></use>
+                                    </svg>
+
+
+
+                                </div>
+                                <div class="aside_nav__text">Customers</div>
+                                <div class="aside_nav__arrow">
+                                    <svg class="aside_nav__decor">
+                                        <use xlink:href='img/main/sprite.svg#arrow'></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="aside_nav__item">
+                            <a href="#" class="aside_nav__link">
+                                <div class="aside_nav__icon aside_nav__icon_stroke">
+                                    <svg class="aside_nav__vector">
+                                        <use xlink:href='img/main/sprite.svg#income_icon'></use>
+                                    </svg>
+                                </div>
+                                <div class="aside_nav__text">Income</div>
+                                <div class="aside_nav__arrow">
+                                    <svg class="aside_nav__decor">
+                                        <use xlink:href='img/main/sprite.svg#arrow'></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="aside_nav__item">
+                            <a href="#" class="aside_nav__link">
+                                <div class="aside_nav__icon aside_nav__icon_fill">
+                                    <svg class="aside_nav__vector">
+                                        <use xlink:href='img/main/sprite.svg#promote_icon'></use>
+                                    </svg>
+                                </div>
+                                <div class="aside_nav__text">Promote</div>
+                                <div class="aside_nav__arrow">
+                                    <svg class="aside_nav__decor">
+                                        <use xlink:href='img/main/sprite.svg#arrow'></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="aside_nav__item">
+                            <a href="#" class="aside_nav__link">
+                                <div class="aside_nav__icon aside_nav__icon_fill">
+                                    <svg class="aside_nav__vector">
+                                        <use xlink:href='img/main/sprite.svg#help_icon'></use>
+                                    </svg>
+                                </div>
+                                <div class="aside_nav__text">Help</div>
+                                <div class="aside_nav__arrow">
+                                    <svg class="aside_nav__decor">
+                                        <use xlink:href='img/main/sprite.svg#arrow'></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="aside__bottom aside-bottom">
+                    <div class="aside-bottom__avatar"><img src="img/main/avatar.jpeg" alt="avatar"></div>
+                    <div class="aside-bottom__info">
+                        <div class="aside-bottom__name">Evano</div>
+                        <div class="aside-bottom__position">Project Manager</div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
