@@ -37,11 +37,10 @@ if (mql.matches) {
 		
 		let scrollPosition = this.scrollY
 		mobileAnimItems.forEach((item, i)=> {
-			let df = item.getBoundingClientRect().top + (20 * i) 
 			let itemTopDistanse = item.offsetTop - window.innerHeight
-			// console.log(itemTopDistanse, scrollPosition);
 			if (item.classList.contains('page_table_mobile__tr')) {
-				itemTopDistanse = (item.offsetTop + document.querySelector('.page_table_mobile').offsetTop) - window.innerHeight
+				const itemsWrapper = document.querySelector('.page_table_mobile')
+				itemTopDistanse = (item.offsetTop + itemsWrapper.offsetTop) - window.innerHeight
 				if (scrollPosition > itemTopDistanse) {
 					item.classList.add('_show')
 				}
