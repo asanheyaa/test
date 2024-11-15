@@ -33,22 +33,33 @@ if (mql.matches) {
 	setInterval(() => {
 		aside.classList.add('_show');
 	}, 200);
-	window.addEventListener('scroll', (e) => {
-		
-		let scrollPosition = this.scrollY
-		mobileAnimItems.forEach((item, i)=> {
-			let itemTopDistanse = item.offsetTop - window.innerHeight
-			if (item.classList.contains('page_table_mobile__tr')) {
-				const itemsWrapper = document.querySelector('.page_table_mobile')
-				itemTopDistanse = (item.offsetTop + itemsWrapper.offsetTop) - window.innerHeight
-				if (scrollPosition > itemTopDistanse) {
-					item.classList.add('_show')
-				}
-			} else if (scrollPosition > itemTopDistanse) {
+	document.body.classList.add('scrollListening')
+	window.addEventListener('scroll', onScroll)
+
+}
+
+function onScroll(e) {
+	let scrollPosition = this.scrollY
+
+	mobileAnimItems.forEach((item, i) => {
+		let itemTopDistanse = item.offsetTop - window.innerHeight
+		if (item.classList.contains('page_table_mobile__tr')) {
+			itemTopDistanse = (item.offsetTop + document.querySelector('.page_table_mobile').offsetTop) - window.innerHeight
+			if (scrollPosition > itemTopDistanse) {
 				item.classList.add('_show')
 			}
-			
-		});
-	})
-	
+		} else if (scrollPosition > itemTopDistanse) {
+			item.classList.add('_show')
+		}
+
+	});
 }
+
+window.addEventListener('resize', (e) => {
+	if (!mql.matches) {
+		if (!document.body.classList.contains('scrollListening')) {
+			document.body.classList.add('scrollListening')
+			window.addEventListener('scroll', onScroll)
+		}
+	}
+})
